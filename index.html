@@ -5,60 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasySmeta - Калькулятор ремонта</title>
     <style>
-        /* Основные стили */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
             color: #333;
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        /* Секция с вашей девушкой на фоне */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5)), url('girl-background.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
         }
         
-        /* Шапка */
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
         
         h1 {
             font-size: 2.5em;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
         
         .subtitle {
             font-size: 1.2em;
             margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
         
-        /* Кнопка */
         .btn {
             display: inline-block;
             background-color: #FF5722;
             color: white;
             padding: 15px 30px;
-            text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            font-size: 1.1em;
-            transition: background-color 0.3s;
+            text-decoration: none;
+            transition: background 0.3s;
         }
         
         .btn:hover {
             background-color: #E64A19;
         }
         
-        /* Популярные расчёты */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
         .popular-calculations {
-            margin: 50px 0;
             text-align: center;
+            margin: 50px 0;
         }
         
         .calculations-grid {
@@ -74,34 +77,25 @@
             padding: 20px;
             width: 200px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
         }
         
-        /* Отзыв */
-        .testimonial {
-            background: white;
+        footer {
+            background: #f5f5f5;
             padding: 20px;
-            margin: 30px auto;
-            max-width: 600px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            font-style: italic;
-        }
-        
-        .author {
-            text-align: right;
-            font-weight: bold;
-            margin-top: 10px;
+            text-align: center;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <section class="hero">
+        <div class="hero-content">
             <h1>Калькулятор ремонта</h1>
             <p class="subtitle">Выстрая смета ремонта за 5 минут</p>
             <a href="#calculator" class="btn">Рассчитать стоимость</a>
         </div>
-    </header>
+    </section>
 
     <div class="container">
         <section class="popular-calculations">
@@ -118,17 +112,15 @@
                 </div>
             </div>
         </section>
-
-        <section class="testimonial">
-            <p>"Отличный сервис! За несколько шагов удалось составить детальную смету, рекомендую"</p>
-            <p class="author">Иван П.</p>
-        </section>
     </div>
 
+    <footer>
+        <p>easysmeta.github.io</p>
+    </footer>
+
     <script>
-        // Здесь будет логика калькулятора
         function calculate() {
-            alert("Функция калькулятора будет добавлена позже!");
+            alert("Калькулятор в разработке!");
         }
     </script>
 </body>
