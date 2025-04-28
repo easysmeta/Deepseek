@@ -1,27 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasySmeta - Калькулятор ремонта</title>
     <style>
-        body { font-family: Arial; text-align: center; padding: 20px; }
-        button { background: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Шапка */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        /* Кнопка */
+        .btn {
+            display: inline-block;
+            background-color: #FF5722;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #E64A19;
+        }
+        
+        /* Популярные расчёты */
+        .popular-calculations {
+            margin: 50px 0;
+            text-align: center;
+        }
+        
+        .calculations-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .calculation-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        /* Отзыв */
+        .testimonial {
+            background: white;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-style: italic;
+        }
+        
+        .author {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Калькулятор ремонта</h1>
-    <p>Выстрая смета за 5 минут</p>
-    <button onclick="calculate()">Рассчитать стоимость</button>
+    <header>
+        <div class="container">
+            <h1>Калькулятор ремонта</h1>
+            <p class="subtitle">Выстрая смета ремонта за 5 минут</p>
+            <a href="#calculator" class="btn">Рассчитать стоимость</a>
+        </div>
+    </header>
 
-    <h3>Популярные расчёты</h3>
-    <div>
-        <p>Косметический ремонт</p>
-        <p>Укладка ламината</p>
-        <p>Ремонт ванной</p>
+    <div class="container">
+        <section class="popular-calculations">
+            <h2>Популярные расчёты</h2>
+            <div class="calculations-grid">
+                <div class="calculation-card">
+                    <h3>Косметический ремонт</h3>
+                </div>
+                <div class="calculation-card">
+                    <h3>Укладка ламината</h3>
+                </div>
+                <div class="calculation-card">
+                    <h3>Ремонт ванной</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <p>"Отличный сервис! За несколько шагов удалось составить детальную смету, рекомендую"</p>
+            <p class="author">Иван П.</p>
+        </section>
     </div>
 
     <script>
+        // Здесь будет логика калькулятора
         function calculate() {
-            alert("Скоро тут будет калькулятор!");
+            alert("Функция калькулятора будет добавлена позже!");
         }
     </script>
 </body>
